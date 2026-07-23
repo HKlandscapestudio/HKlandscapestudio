@@ -1,1 +1,574 @@
+/* ===================================================
+   HOÀNG KIM LANDSCAPE STUDIO
+   WEBSITE V2.0
+
+   File:
+   style.css
+
+=================================================== */
+
+
+/* ===================================================
+   RESET
+=================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:
+    "Segoe UI",
+    Tahoma,
+    Geneva,
+    Verdana,
+    sans-serif;
+
+    background:#f5f5ef;
+
+    color:#222;
+
+    line-height:1.6;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    background:none;
+
+}
+/* ===================================================
+   ROOT
+=================================================== */
+
+:root{
+
+    --primary:#0F5132;
+
+    --secondary:#C8A951;
+
+    --white:#ffffff;
+
+    --black:#111111;
+
+    --text:#444;
+
+    --bg:#f5f5ef;
+
+    --card:#ffffff;
+
+    --border:#e5e5e5;
+
+    --shadow:
+
+    0 20px 60px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+    --transition:.35s;
+
+}
+/* ===================================================
+   LAYOUT
+=================================================== */
+
+.container{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+}
+
+.section{
+
+    padding:120px 0;
+
+}
+/* ===================================================
+   TYPOGRAPHY
+=================================================== */
+
+.section-header{
+
+    text-align:center;
+
+    margin-bottom:70px;
+
+}
+
+.section-tag{
+
+    display:inline-block;
+
+    padding:8px 20px;
+
+    border-radius:30px;
+
+    background:rgba(15,81,50,.08);
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    margin-bottom:18px;
+
+}
+
+.section-header h2{
+
+    font-size:44px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+    line-height:1.25;
+
+}
+
+.section-header p{
+
+    width:min(700px,100%);
+
+    margin:auto;
+
+    color:#666;
+
+    font-size:18px;
+
+}
+/* ===================================================
+   BUTTON
+=================================================== */
+
+.btn-primary{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:16px 42px;
+
+    border-radius:40px;
+
+    background:var(--secondary);
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-4px);
+
+}
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:16px 42px;
+
+    border-radius:40px;
+
+    border:2px solid #fff;
+
+    color:#fff;
+
+    transition:var(--transition);
+
+}
+
+.btn-secondary:hover{
+
+    background:#fff;
+
+    color:var(--primary);
+
+}
+/* ===================================================
+   CARD GRID
+=================================================== */
+
+.card-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+/* ===================================================
+   LOADER
+=================================================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#fff;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+}
+
+.loader-logo{
+
+    width:120px;
+
+    margin-bottom:20px;
+
+}
+
+.loader-text{
+
+    font-size:18px;
+
+    letter-spacing:3px;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+}
+/* ===================================================
+   HEADER
+=================================================== */
+
+#header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    transition:.4s;
+
+}
+
+#header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:90px;
+
+}
+
+#header.scrolled{
+
+    background:rgba(255,255,255,.78);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+}
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.logo img{
+
+    width:72px;
+
+    transition:.3s;
+
+}
+
+.logo img:hover{
+
+    transform:scale(1.05);
+
+}
+nav ul{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:38px;
+
+}
+
+nav a{
+
+    color:#fff;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+#header.scrolled nav a{
+
+    color:var(--primary);
+
+}
+nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    transition:.35s;
+
+}
+
+nav a:hover::after{
+
+    width:100%;
+
+}
+/* ===================================================
+   HERO
+=================================================== */
+
+#hero{
+
+    position:relative;
+
+    height:100vh;
+
+    background-image:
+
+    url("assets/hero/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    display:flex;
+
+    align-items:center;
+
+}
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(0,0,0,.55),
+
+        rgba(0,0,0,.25),
+
+        rgba(0,0,0,.10)
+
+    );
+
+}
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(650px,90%);
+
+    margin-left:8%;
+
+    color:#fff;
+
+}
+.hero-content h2{
+
+    font-size:18px;
+
+    letter-spacing:6px;
+
+    margin-bottom:18px;
+
+    font-weight:500;
+
+    text-transform:uppercase;
+
+}
+.hero-content h1{
+
+    font-size:72px;
+
+    line-height:1.1;
+
+    margin-bottom:28px;
+
+    font-weight:700;
+
+}
+.hero-content p{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    width:90%;
+
+    margin-bottom:45px;
+
+}
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+.hero-content>*{
+
+    animation:fadeUp .8s ease forwards;
+
+    opacity:0;
+
+}
+
+.hero-content h2{
+
+    animation-delay:.2s;
+
+}
+
+.hero-content h1{
+
+    animation-delay:.4s;
+
+}
+
+.hero-content p{
+
+    animation-delay:.6s;
+
+}
+
+.hero-buttons{
+
+    animation-delay:.8s;
+
+}
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+        translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+        translateY(0);
+
+    }
+
+}
 
