@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hoàng Kim Landscape Studio - Thiết kế, thi công và bảo dưỡng cảnh quan thực tế.">
+  <meta name="theme-color" content="#173f2a">
+  <title>Hoàng Kim Landscape Studio</title>
+  <link rel="icon" href="assets/logo/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true"><span></span></div>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Hoàng Kim Landscape Studio - Trang chủ">
+        <img id="headerLogo" src="assets/logo/logo-hoang-kim-landscape-studio.png" alt="Logo Hoàng Kim Landscape Studio">
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Mở menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="mainNav" aria-label="Điều hướng chính">
+        <a href="#home">Trang chủ</a><a href="#services">Dịch vụ</a><a href="#portfolio">Portfolio</a><a href="#projects">Dự án</a><a href="#green365">Green365</a><a href="#contact">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <p class="eyebrow">HOÀNG KIM LANDSCAPE STUDIO</p>
+        <h1 id="heroTitle">Thiết kế để<br>thi công được.</h1>
+        <p id="heroDescription">Giải pháp cảnh quan thực tế, đẹp hôm nay và bền nhiều năm sau.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#projects">Xem dự án</a><a class="btn btn-outline" href="#contact">Liên hệ</a></div>
+      </div>
+      <a class="scroll-down" href="#services" aria-label="Đi xuống phần dịch vụ">↓</a>
+    </section>
+
+    <section class="section" id="services"><div class="container"><div class="section-heading reveal"><span>DỊCH VỤ</span><h2>Giải pháp cảnh quan toàn diện</h2><p>Tư vấn, thiết kế, thi công và chăm sóc phù hợp thực tế sử dụng.</p></div><div class="card-grid three" id="servicesGrid"></div></div></section>
+    <section class="section section-soft" id="portfolio"><div class="container"><div class="section-heading reveal"><span>PORTFOLIO</span><h2>Hồ sơ năng lực</h2><p>Các bộ hồ sơ và hình ảnh giới thiệu năng lực của studio.</p></div><div class="card-grid three" id="portfolioGrid"></div></div></section>
+    <section class="section" id="projects"><div class="container"><div class="section-heading reveal"><span>DỰ ÁN</span><h2>Công trình tiêu biểu</h2><p>Các dự án được trình bày bằng hình ảnh, thông tin và thư viện chi tiết.</p></div><div class="card-grid three" id="projectsGrid"></div></div></section>
+    <section class="section section-dark" id="green365"><div class="container"><div class="section-heading light reveal"><span>GREEN365 JOURNAL</span><h2>365 ngày xây dựng Studio Cảnh Quan bằng AI</h2><p>Nhật ký thành quả, bài học và mục tiêu mỗi ngày.</p></div><div class="card-grid four" id="green365Grid"></div><div class="center"><button class="btn btn-outline" id="loadMoreGreen">Xem thêm nhật ký</button></div></div></section>
+    <section class="section contact-section" id="contact"><div class="container contact-grid"><div class="contact-panel reveal"><span class="section-kicker">LIÊN HỆ</span><h2>Trao đổi về không gian xanh của bạn</h2><p>Gửi thông tin hiện trạng và nhu cầu. Hoàng Kim Landscape Studio sẽ đề xuất giải pháp phù hợp thực tế và ngân sách.</p><div class="contact-list" id="contactList"></div><div class="social-links" id="socialLinks"></div></div><div class="contact-media reveal"><div class="map-wrap" id="mapWrap"></div><div class="qr-card"><img id="zaloQr" src="assets/contact/qr-zalo.png" alt="QR Zalo Hoàng Kim Landscape Studio"><div><strong>Quét QR để kết nối Zalo</strong><p>Tư vấn nhanh về thiết kế, thi công và bảo dưỡng.</p></div></div></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-wrap"><img id="footerLogo" src="assets/logo/logo-hoang-kim-landscape-studio-light.png" alt="Logo Hoàng Kim Landscape Studio"><p>© <span id="year"></span> Hoàng Kim Landscape Studio. Thiết kế để thi công được.</p><a href="#top">Lên đầu trang ↑</a></div></footer>
+  <button class="back-to-top" id="backToTop" aria-label="Lên đầu trang">↑</button>
+
+  <div class="modal" id="sharedModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-backdrop" data-close-modal></div><div class="modal-panel"><button class="modal-close" data-close-modal aria-label="Đóng">×</button><div id="modalContent"></div></div></div>
+
+  <script src="data/config.js"></script>
+  <script src="data/services.js"></script>
+  <script src="data/portfolio.js"></script>
+  <script src="data/projects.js"></script>
+  <script src="data/green365.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
