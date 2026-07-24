@@ -6,9 +6,9 @@ const siteConfig = {
         description:
             "Tư vấn, thiết kế, thi công và bảo dưỡng cảnh quan thực tế, phù hợp khí hậu, ngân sách và nhu cầu sử dụng.",
         logo: {
-            main: "assets/logo/logo-hoang-kim-landscape-studio.png",
-            light: "assets/logo/logo-hoang-kim-landscape-studio-light.png",
-            favicon: "assets/logo/favicon.png",
+            main: "assets/logo/logo-hoang-kim-landscape-studio.jpg",
+            light: "assets/logo/logo-hoang-kim-landscape-studio-light.jpg",
+            favicon: "assets/logo/favicon.jpg",
             alt: "Logo Hoàng Kim Landscape Studio"
         }
     },
