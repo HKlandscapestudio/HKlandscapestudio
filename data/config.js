@@ -1,16 +1,3 @@
-/**
- * HOÀNG KIM LANDSCAPE STUDIO
- * Cấu hình thông tin chung của website
- *
- * Chỉ cần chỉnh sửa file này khi muốn thay đổi:
- * - Tên thương hiệu
- * - Slogan
- * - Thông tin liên hệ
- * - Nội dung Hero
- * - Liên kết mạng xã hội
- * - Thiết lập SEO cơ bản
- */
-
 const siteConfig = {
     brand: {
         name: "Hoàng Kim Landscape Studio",
@@ -27,9 +14,9 @@ const siteConfig = {
     },
 
     contact: {
-        phone: "CẬP NHẬT_SỐ_ĐIỆN_THOẠI",
-        phoneDisplay: "Cập nhật số điện thoại",
-        email: "CẬP_NHẬT_EMAIL",
+        phone: "09845.2345.1",
+        phoneDisplay: "09845.2345.1",
+        email: "Hoangkimlandscapestudio@gmail.com",
         address: "TP. Quy Nhơn, Gia Lai",
         website: "https://hklandscapestudio.github.io",
         workingHours: "Thứ Hai – Thứ Bảy | 08:00 – 17:30"
@@ -60,7 +47,7 @@ const siteConfig = {
             href: "#contact"
         },
 
-        backgroundImage: "assets/hero/hero-landscape.jpg",
+        backgroundImage: "assets/hero/hero-landscape.png",
 
         statistics: [
             {
