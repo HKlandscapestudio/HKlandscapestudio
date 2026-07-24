@@ -8,3 +8,22 @@ window.PROJECTS = Array.from({length: 9}, (_, i) => ({
   description: "Nội dung mô tả dự án đang chờ bạn cập nhật. Toàn bộ thông tin được quản lý trong file data/projects.js.",
   gallery: [1,2,3,4].map(n => `assets/projects/project-${String(i+1).padStart(2,"0")}-${String(n).padStart(2,"0")}.jpg`)
 }));
+const projects = [
+  {
+    id: 1,
+    title: "Hải Giang MerryLand Quy Nhơn",
+    location: "Quy Nhơn, Gia Lai",
+    cover: "assets/projects/project-01.jpg",
+
+    gallery: [
+      "assets/projects/project-01.jpg",
+      "assets/projects/project-01-2.jpg",
+      "assets/projects/project-01-3.jpg"
+    ],
+
+    description:
+      "Giám sát thi công cảnh quan khu đô thị nghỉ dưỡng Hải Giang MerryLand.",
+
+    year: "2021"
+  }
+];
